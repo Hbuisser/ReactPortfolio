@@ -1,0 +1,24 @@
+@import "../../../global.scss";
+
+li {
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    // border: 2px;
+    cursor: pointer;
+
+    // &:hover {
+    //     border: solid 1px;
+    //     border-radius: 10px;
+    // }
+    @include mobile{
+        margin-right: 20px;
+      }
+
+    &.active {
+        background-color: $mainColor;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
