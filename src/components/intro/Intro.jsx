@@ -8,10 +8,10 @@ export default function Intro() {
 
     useEffect(() => {
         init(textRef.current, { 
-            showCursor: true,
+            showCursor: false,
             backDelay: 1500,
             backspeed: 80,
-            strings: ['React Developer', 'React Native Developer'] 
+            strings: ['Mongo DB', 'Express', 'React', 'Node.js'] 
         })
     }, [])
 
@@ -19,14 +19,15 @@ export default function Intro() {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imageContainer">
-                    <img src="./assets/man.png" alt=""/>
+                    <img src="./assets/profil_montagne.jpg" alt=""/>
                 </div>
             </div>
             <div className="right">
                 <div className="wrapper">
                     <h2>Hi there, I am</h2>
                     <h1>Henry Buisseret</h1>
-                    <h3>Freelance <span ref={textRef}>Developer</span></h3>
+                    <h3>MERN Expert </h3>
+                    <span ref={textRef}></span>
                 </div>
                 <a href="#portfolio">
                     <img src="../../assets/down.png" alt=""/>
