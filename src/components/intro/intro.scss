@@ -23,11 +23,11 @@
 			align-items: flex-end;
 			justify-content: center;
 			float: right;
-			
+
 			@include mobile {
 				align-items: flex-start;
 			}
-			
+
 			img {
 				object-fit: cover;
 				width: 100%;
@@ -51,7 +51,7 @@
 			display: flex;
 			flex-direction: column;
 			// justify-content: center;
-			margin-top: 150px;
+			// margin-top: 120px;
 			padding-left: 50px;
 
 			@include mobile {
@@ -59,19 +59,41 @@
 				align-items: center;
 			}
 
-			h1 {
-				font-size: 60px;
-				margin: 10px 0;
-				color: $mainColor;
+			.desc {
+				// border: solid 1px;
+				margin-top: 120px;
+				background-color: white;
+				border-radius: 10px;
+				box-shadow: 0px 0px 15px -8px black;
+				width: 80%;
+				padding: 20px;
+				transition: all 1s ease;
 
-				@include mobile {
-					font-size: 40px;
+				h1 {
+					font-size: 60px;
+					// margin: 10px 0;
+					color: $mainColor;
+
+					@include mobile {
+						font-size: 40px;
+					}
+				}
+				h2 {
+					color: $mainColor;
+					font-size: 35px;
+				}
+				h3 {
+					font-size: 30px;
+					color: $mainColor;
+				}
+				span{
+					color: $redColor;
+				}
+				&:hover {
+					transform: scale(1.05);
 				}
 			}
-			h2 {
-				color: $mainColor;
-				font-size: 35px;
-			}
+
 			h3 {
 				color: $redColor;
 				font-size: 30px;
