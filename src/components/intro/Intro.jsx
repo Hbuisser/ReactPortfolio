@@ -16,25 +16,19 @@ export default function Intro() {
 
 	return (
 		<div className="intro" id="intro">
-			<div className="left">
-				<div className="imageContainer">
-					<img src="./assets/profil_montagne.jpg" alt="" />
+			<div className="wrapper">
+				<div className="desc">
+					<h2>Meet your next</h2>
+					<h1>Full-Stack Developer.</h1>
+					<hr />
+					<h3>
+						I help you to create <span>innovative tech products</span>
+					</h3>
 				</div>
 			</div>
-			<div className="right">
-				<div className="wrapper">
-					<div className="desc">
-						<h2>Hi there, I am</h2>
-						<h1>Henry Buisseret</h1>
-						<h3>I help you to create <span>innovative tech products</span></h3>
-					</div>
-					{/* <h3>MERN Expert </h3>
-					<span ref={textRef}></span> */}
-				</div>
-				<a href="#portfolio">
-					<img src="../../assets/down.png" alt="" />
-				</a>
-			</div>
+			<a href="#portfolio">
+				<img src="assets/whiteDown.png" alt="" />
+			</a>
 		</div>
 	);
 }

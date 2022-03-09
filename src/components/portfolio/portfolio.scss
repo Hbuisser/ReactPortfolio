@@ -10,7 +10,7 @@
     margin-top: 30px;
     font-size: 50px;
 
-    @include mobile{
+    @include mobile {
       font-size: 20px;
     }
   }
@@ -21,7 +21,7 @@
     list-style: none;
     display: flex;
 
-    @include mobile{
+    @include mobile {
       margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
@@ -40,11 +40,11 @@
     }
 
     .item {
-      width: 220px;
-      height: 150px;
+      width: 270px;
+      height: 200px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
-      margin: 10px 20px;
+      margin: 10px 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,4 +80,5 @@
     }
   }
 }
+
 

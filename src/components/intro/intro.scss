@@ -1,125 +1,93 @@
 @import "../../global.scss";
 
 .intro {
-	background-color: $whiteColor;
+	background-color: $mainColor;
 	display: flex;
+	flex-direction: column;
 
 	@include mobile {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.left {
-		flex: 1.2;
-		overflow: hidden;
-
-		.imageContainer {
-			margin-top: 50px;
-			width: 650px;
-			height: 650px;
+	.wrapper {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		
+		
+		@include mobile {
+			padding-left: 0;
+			align-items: center;
+		}
+		
+		.desc {
+			overflow: hidden;
+			margin-top: 120px;
+			text-align: center;
 			background-color: $mainColor;
-			border-radius: 50%;
-			display: flex;
-			align-items: flex-end;
-			justify-content: center;
-			float: right;
+			border-radius: 10px;
+			width: 60%;
+			padding: 35px;
+			transition: all 1s ease;
 
-			@include mobile {
-				align-items: flex-start;
-			}
-
-			img {
-				object-fit: cover;
-				width: 100%;
-				// height: 70%;
+			h1 {
+				font-size: 80px;
+				margin: 10px 0;
+				margin-bottom: 30px;
+				color: $mainColor;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: $whiteColor;
 
 				@include mobile {
-					height: 50%;
+					font-size: 40px;
 				}
 			}
-		}
-	}
-	.right {
-		flex: 1.5;
-		position: relative;
-		height: 100%;
-		overflow: hidden;
-
-		.wrapper {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			// justify-content: center;
-			// margin-top: 120px;
-			padding-left: 50px;
-
-			@include mobile {
-				padding-left: 0;
-				align-items: center;
-			}
-
-			.desc {
-				// border: solid 1px;
-				margin-top: 120px;
-				background-color: white;
-				border-radius: 10px;
-				box-shadow: 0px 0px 15px -8px black;
-				width: 80%;
-				padding: 20px;
-				transition: all 1s ease;
-
-				h1 {
-					font-size: 60px;
-					// margin: 10px 0;
-					color: $mainColor;
-
-					@include mobile {
-						font-size: 40px;
-					}
-				}
-				h2 {
-					color: $mainColor;
-					font-size: 35px;
-				}
-				h3 {
-					font-size: 30px;
-					color: $mainColor;
-				}
-				span{
-					color: $redColor;
-				}
-				&:hover {
-					transform: scale(1.05);
-				}
-			}
-
-			h3 {
-				color: $redColor;
-				font-size: 30px;
-				margin-top: 35px;
+			h2 {
+				color: $whiteColor;
+				font-size: 40px;
 
 				@include mobile {
 					font-size: 20px;
 				}
 			}
-			span {
+			h3 {
 				font-size: 30px;
-				color: $mainColor;
-				margin-top: 15px;
+				color: $whiteColor;
+				margin-top: 30px;
+
+				@include mobile {
+					font-size: 15px;
+				}
+			}
+
+			span {
+				color: $redColor;
+			}
+			.title {
+				font-style: italic;
+				margin-bottom: 25px;
+			}
+			&:hover {
+				transform: scale(1.2);
 			}
 		}
-		a {
-			position: absolute;
-			bottom: 10px;
-			left: 30%;
-		}
+	}
+
+	a {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+
 		img {
-			width: 30px;
-			animation: arrawBlink 2s infinite;
+			width: 50px;
+			animation: arrowBlink 2s infinite;
+			margin-bottom: 10px;
 		}
 
-		@keyframes arrawBlink {
+		@keyframes arrowBlink {
 			100% {
 				opacity: 0;
 			}

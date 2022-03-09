@@ -1,0 +1,25 @@
+
+.containerPirzio {
+    margin-top: 70px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .wrapperPirzio {
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagePirzio {
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 400px;
+        
+        .imgPirzio {
+            object-fit: cover;
+        }
+    }
+}
